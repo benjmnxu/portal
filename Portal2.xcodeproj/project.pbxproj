@@ -1,0 +1,586 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D680D13D2E873CBA00C9D38D /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = D680D13C2E873CBA00C9D38D /* KeyboardShortcuts */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D680D10B2E87392400C9D38D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D680D0F42E87392300C9D38D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D680D0FB2E87392300C9D38D;
+			remoteInfo = Portal2;
+		};
+		D680D1152E87392400C9D38D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D680D0F42E87392300C9D38D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D680D0FB2E87392300C9D38D;
+			remoteInfo = Portal2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D680D0FC2E87392300C9D38D /* Portal2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Portal2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D680D10A2E87392400C9D38D /* Portal2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Portal2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D680D1142E87392400C9D38D /* Portal2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Portal2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		D680D0FE2E87392300C9D38D /* Portal2 */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Portal2;
+			sourceTree = "<group>";
+		};
+		D680D10D2E87392400C9D38D /* Portal2Tests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Portal2Tests;
+			sourceTree = "<group>";
+		};
+		D680D1172E87392400C9D38D /* Portal2UITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Portal2UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D680D0F92E87392300C9D38D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D680D13D2E873CBA00C9D38D /* KeyboardShortcuts in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D680D1072E87392400C9D38D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D680D1112E87392400C9D38D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D680D0F32E87392300C9D38D = {
+			isa = PBXGroup;
+			children = (
+				D680D0FE2E87392300C9D38D /* Portal2 */,
+				D680D10D2E87392400C9D38D /* Portal2Tests */,
+				D680D1172E87392400C9D38D /* Portal2UITests */,
+				D680D13B2E873CB900C9D38D /* Frameworks */,
+				D680D0FD2E87392300C9D38D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D680D0FD2E87392300C9D38D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D680D0FC2E87392300C9D38D /* Portal2.app */,
+				D680D10A2E87392400C9D38D /* Portal2Tests.xctest */,
+				D680D1142E87392400C9D38D /* Portal2UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D680D13B2E873CB900C9D38D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D680D0FB2E87392300C9D38D /* Portal2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D680D11E2E87392400C9D38D /* Build configuration list for PBXNativeTarget "Portal2" */;
+			buildPhases = (
+				D680D0F82E87392300C9D38D /* Sources */,
+				D680D0F92E87392300C9D38D /* Frameworks */,
+				D680D0FA2E87392300C9D38D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				D680D0FE2E87392300C9D38D /* Portal2 */,
+			);
+			name = Portal2;
+			packageProductDependencies = (
+				D680D13C2E873CBA00C9D38D /* KeyboardShortcuts */,
+			);
+			productName = Portal2;
+			productReference = D680D0FC2E87392300C9D38D /* Portal2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D680D1092E87392400C9D38D /* Portal2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D680D1212E87392400C9D38D /* Build configuration list for PBXNativeTarget "Portal2Tests" */;
+			buildPhases = (
+				D680D1062E87392400C9D38D /* Sources */,
+				D680D1072E87392400C9D38D /* Frameworks */,
+				D680D1082E87392400C9D38D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D680D10C2E87392400C9D38D /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D680D10D2E87392400C9D38D /* Portal2Tests */,
+			);
+			name = Portal2Tests;
+			packageProductDependencies = (
+			);
+			productName = Portal2Tests;
+			productReference = D680D10A2E87392400C9D38D /* Portal2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D680D1132E87392400C9D38D /* Portal2UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D680D1242E87392400C9D38D /* Build configuration list for PBXNativeTarget "Portal2UITests" */;
+			buildPhases = (
+				D680D1102E87392400C9D38D /* Sources */,
+				D680D1112E87392400C9D38D /* Frameworks */,
+				D680D1122E87392400C9D38D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D680D1162E87392400C9D38D /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D680D1172E87392400C9D38D /* Portal2UITests */,
+			);
+			name = Portal2UITests;
+			packageProductDependencies = (
+			);
+			productName = Portal2UITests;
+			productReference = D680D1142E87392400C9D38D /* Portal2UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D680D0F42E87392300C9D38D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					D680D0FB2E87392300C9D38D = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					D680D1092E87392400C9D38D = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = D680D0FB2E87392300C9D38D;
+					};
+					D680D1132E87392400C9D38D = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = D680D0FB2E87392300C9D38D;
+					};
+				};
+			};
+			buildConfigurationList = D680D0F72E87392300C9D38D /* Build configuration list for PBXProject "Portal2" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D680D0F32E87392300C9D38D;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				D680D1272E873A0C00C9D38D /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = D680D0FD2E87392300C9D38D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D680D0FB2E87392300C9D38D /* Portal2 */,
+				D680D1092E87392400C9D38D /* Portal2Tests */,
+				D680D1132E87392400C9D38D /* Portal2UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D680D0FA2E87392300C9D38D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D680D1082E87392400C9D38D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D680D1122E87392400C9D38D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D680D0F82E87392300C9D38D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D680D1062E87392400C9D38D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D680D1102E87392400C9D38D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D680D10C2E87392400C9D38D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D680D0FB2E87392300C9D38D /* Portal2 */;
+			targetProxy = D680D10B2E87392400C9D38D /* PBXContainerItemProxy */;
+		};
+		D680D1162E87392400C9D38D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D680D0FB2E87392300C9D38D /* Portal2 */;
+			targetProxy = D680D1152E87392400C9D38D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D680D11C2E87392400C9D38D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D680D11D2E87392400C9D38D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		D680D11F2E87392400C9D38D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Portal2/Portal2.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ayu.Portal2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D680D1202E87392400C9D38D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Portal2/Portal2.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ayu.Portal2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		D680D1222E87392400C9D38D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ayu.Portal2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Portal2.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Portal2";
+			};
+			name = Debug;
+		};
+		D680D1232E87392400C9D38D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ayu.Portal2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Portal2.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Portal2";
+			};
+			name = Release;
+		};
+		D680D1252E87392400C9D38D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ayu.Portal2UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Portal2;
+			};
+			name = Debug;
+		};
+		D680D1262E87392400C9D38D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ayu.Portal2UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Portal2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D680D0F72E87392300C9D38D /* Build configuration list for PBXProject "Portal2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D680D11C2E87392400C9D38D /* Debug */,
+				D680D11D2E87392400C9D38D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D680D11E2E87392400C9D38D /* Build configuration list for PBXNativeTarget "Portal2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D680D11F2E87392400C9D38D /* Debug */,
+				D680D1202E87392400C9D38D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D680D1212E87392400C9D38D /* Build configuration list for PBXNativeTarget "Portal2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D680D1222E87392400C9D38D /* Debug */,
+				D680D1232E87392400C9D38D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D680D1242E87392400C9D38D /* Build configuration list for PBXNativeTarget "Portal2UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D680D1252E87392400C9D38D /* Debug */,
+				D680D1262E87392400C9D38D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D680D1272E873A0C00C9D38D /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/KeyboardShortcuts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D680D13C2E873CBA00C9D38D /* KeyboardShortcuts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D680D1272E873A0C00C9D38D /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */;
+			productName = KeyboardShortcuts;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = D680D0F42E87392300C9D38D /* Project object */;
+}

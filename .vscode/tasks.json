@@ -1,0 +1,32 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build:debug",
+      "type": "shell",
+      "command": "xcodebuild",
+      "args": [
+        "-project", "Portal2.xcodeproj",
+        "-scheme", "Portal2",
+        "-configuration", "Debug",
+        "-destination", "platform=macOS",
+        "-derivedDataPath", ".xcodebuild",
+        "CODE_SIGNING_ALLOWED=NO"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "run:debug",
+      "type": "shell",
+      "command": "open",
+      "args": [
+        ".xcodebuild/Build/Products/Debug/Portal2.app"
+      ],
+      "dependsOn": "build:debug"
+    }
+  ]
+}
