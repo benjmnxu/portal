@@ -13,13 +13,18 @@ struct PortalApp: App {
             Label("Portal", systemImage: "bubble.left.and.bubble.right")
                 .background(HotkeyBridge())
         }
-
         WindowGroup(id: "portal") {
-            ContentView()
-                .environmentObject(store)
-                .frame(minWidth: 200, minHeight: 140)
+            ZStack {
+                VisualEffectBackground()
+                    .ignoresSafeArea()
+                ContentView()
+                    .environmentObject(store)
+                    .frame( minWidth: 200, idealWidth: 600, minHeight: 140, idealHeight: 800)
+                WindowConfigurator()
+                    .allowsHitTesting(false)
+            }
         }
-        .defaultSize(width: 400, height: 260)
+        .defaultSize(width: 200, height: 300)
         .windowStyle(.titleBar)
 
         .commands {
