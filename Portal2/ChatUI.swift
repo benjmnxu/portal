@@ -52,7 +52,7 @@ extension EnvironmentValues { var _modelBinding: Binding<String> { get { self[Mo
 struct ChatContainerView: View {
     @EnvironmentObject var store: Store
     @Environment(\._modelBinding) var modelBinding
-    @State private var apiKey: String = "a" //Keychain.get()
+    @State private var apiKey: String = "a"//Keychain.get()
 
     var body: some View {
         if let thread = store.selected {

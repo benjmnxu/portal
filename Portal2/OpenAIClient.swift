@@ -1,10 +1,18 @@
 import Foundation
+import OpenAI
+import Combine
 
 final class OpenAIClient {
     var apiKey: String
+    var modelClient: OpenAIProtocol
     var model = "gpt-4o-mini"
-
-    init(apiKey: String) { self.apiKey = apiKey }
+    
+    private var activeStream: CancellableRequest?
+    
+    init(apiKey: String) {
+        self.apiKey = apiKey
+        self.modelClient = OpenAI(apiToken: apiKey)
+    }
 
     struct Part: Codable {
         let type: String
@@ -36,50 +44,37 @@ final class OpenAIClient {
             onDone(NSError(domain: "OpenAI", code: 0, userInfo: [NSLocalizedDescriptionKey: "Missing API key"]))
             return
         }
-
-        // Map history
-        let msgs: [ChatMessage] = history.map { m in
-            .init(role: m.role.rawValue, content: buildContent(text: m.text, dataURLs: m.imageDataUrls))
+        
+        // Map history to your own wire structs (kept for future use if you switch APIs)
+        let _ = history.map { m in
+            ChatMessage(role: m.role.rawValue, content: buildContent(text: m.text, dataURLs: m.imageDataUrls))
         }
-        let body = ChatRequest(model: model, stream: true, messages: msgs)
-        guard let url = URL(string: "https://api.openai.com/v1/chat/completions"),
-              let data = try? JSONEncoder().encode(body) else {
-            onDone(NSError(domain: "OpenAI", code: 0, userInfo: [NSLocalizedDescriptionKey: "Bad request"]))
-            return
-        }
-
-        var req = URLRequest(url: url)
-        req.httpMethod = "POST"
-        req.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        req.setValue("Bearer \(apiKey)", forHTTPHeaderField: "Authorization")
-        req.httpBody = data
-
-        if #available(macOS 12.0, *) {
-            Task {
-                do {
-                    let (bytes, resp) = try await URLSession.shared.bytes(for: req)
-                    guard (resp as? HTTPURLResponse)?.statusCode == 200 else {
-                        let code = (resp as? HTTPURLResponse)?.statusCode ?? -1
-                        throw NSError(domain: "OpenAI", code: code, userInfo: [NSLocalizedDescriptionKey: "HTTP \(code)"])
+        
+        let lastUserText = history.last(where: { $0.role == .user })?.text ?? ""
+        let query = CreateModelResponseQuery(
+            input: .textInput(lastUserText),
+            model: .gpt4_1,
+            stream: true
+        )
+        
+        self.activeStream = self.modelClient.responses.createResponseStreaming(
+            query: query,
+            onResult: { result in
+                switch result {
+                case .success(let event):
+                    switch event {
+                    case .outputText(.delta(let deltaEvent)):
+                        onDelta(deltaEvent.delta)
+                    default:
+                        break
                     }
-                    for try await line in bytes.lines {
-                        guard line.hasPrefix("data:") else { continue }
-                        let payload = line.dropFirst(5).trimmingCharacters(in: .whitespaces)
-                        if payload == "[DONE]" { continue }
-                        if let json = try? JSONSerialization.jsonObject(with: Data(payload.utf8)) as? [String: Any],
-                           let choices = json["choices"] as? [[String: Any]],
-                           let delta = (choices.first?["delta"] as? [String: Any])?["content"] as? String,
-                           !delta.isEmpty {
-                            onDelta(delta)
-                        }
-                    }
-                    onDone(nil)
-                } catch {
+                case .failure(let error):
                     onDone(error)
                 }
+            },
+            completion: { error in
+                onDone(error)
             }
-        } else {
-            onDone(NSError(domain: "OpenAI", code: -1, userInfo: [NSLocalizedDescriptionKey: "Requires macOS 12+"]))
-        }
+        )
     }
 }
